@@ -1,4 +1,11 @@
-<mat-toolbar style="gap: 0.2rem" color="primary">
+<mat-toolbar
+  style="
+    gap: 0.2rem;
+    background-color: #0a0a23;
+    color: white;
+    font-family: Roboto Mono;
+  "
+>
   <button
     mat-icon-button
     *ngIf="sidenav.mode === 'over'"
@@ -8,7 +15,7 @@
     <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
   </button>
 
-  <span>WebDevSite</span>
+  <span>Samuca's portfolio</span>
   <span class="example-spacer"></span>
 
   <button mat-icon-button>
@@ -36,6 +43,9 @@
       src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
     />
   </a>
+  <mat-divider
+    style="position: relative; bottom: 0; color: white"
+  ></mat-divider>
 </mat-toolbar>
 
 <mat-sidenav-container>
@@ -50,7 +60,7 @@
     />
 
     <h2 class="name">Samuel Almeida</h2>
-    <p class="designation">Software Engineer</p>
+    <p class="designation">Software Engineer Intern</p>
 
     <mat-divider></mat-divider>
 
@@ -95,6 +105,16 @@
           >
             <img src="https://img.icons8.com/clr-gls/25/000000/github.png" />
             View code at github
+          </a>
+
+          <a
+            mat-button
+            color="primary"
+            href="https://samucatezu.github.io/AngularTestBase/"
+            target="_blank"
+          >
+            <img src="https://img.icons8.com/clr-gls/25/000000/github.png" />
+            View site
           </a>
         </mat-card-actions>
         <mat-card-footer> </mat-card-footer>
