@@ -1,14 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, ViewChild } from "@angular/core";
+import { MatSidenav } from "@angular/material/sidenav";
+import { BreakpointObserver } from "@angular/cdk/layout";
 @Component({
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  templateUrl: "./profile.component.html",
+  styleUrls: ["./profile.component.scss"],
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent {
+  @ViewChild(MatSidenav)
+  sidenav!: MatSidenav;
 
-  constructor() { }
+  constructor(private observer: BreakpointObserver) {}
 
-  ngOnInit(): void {
+  ngAfterViewInit() {
+    this.observer.observe(["(max-width: 800px)"]).subscribe((res) => {
+      if (res.matches) {
+        this.sidenav.mode = "over";
+        this.sidenav.close();
+      } else {
+        this.sidenav.mode = "side";
+        this.sidenav.open();
+      }
+    });
   }
-
 }

@@ -22,9 +22,10 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { MatMenuModule } from "@angular/material/menu";
 import { LayoutModule } from "@angular/cdk/layout";
 import { AppRoutingModule } from "./app-routing.module";
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
-  declarations: [AppComponent, layoutComponent],
+  declarations: [AppComponent, layoutComponent, ProfileComponent],
   imports: [
     BrowserModule,
     MatToolbarModule,

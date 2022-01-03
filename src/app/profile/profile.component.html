@@ -1,1 +1,319 @@
-<p>profile works!</p>
+<mat-toolbar style="gap: 0.2rem; font-family: Roboto Mono" color="primary">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+
+  <span>Angular features</span>
+  <span class="example-spacer"></span>
+
+  <button mat-icon-button>
+    <mat-icon aria-label="Example icon-button with a heart icon"
+      >favorite</mat-icon
+    >
+  </button>
+
+  <a href="https://profile.codersrank.io/user/samucatezu/" target="_blank">
+    <i style="color: white; padding-top: 0.6rem" class="material-icons"
+      >account_circle</i
+    >
+  </a>
+
+  <a href=" https://www.linkedin.com/in/samuel-almeida-ads/" target="_blank">
+    <img
+      style="width: 100%; padding-top: 0.6rem"
+      src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"
+    />
+  </a>
+
+  <a href="https://github.com/samucatezu" target="_blank">
+    <img
+      style="width: 50%; padding-top: 0.6rem"
+      src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+    />
+  </a>
+</mat-toolbar>
+
+<mat-sidenav-container style="font-family: Roboto Mono">
+  <mat-sidenav
+    #sidenav="matSidenav"
+    class="sidenav mat-elevation-z4"
+    mode="over"
+  >
+    <img
+      class="avatar mat-elevation-z8"
+      src="https://github.com/samucatezu.png"
+    />
+
+    <h2 class="name">Samuel Almeida</h2>
+    <p class="designation">Software Engineer</p>
+
+    <mat-divider></mat-divider>
+
+    <a style="color: white; text-decoration: none" [routerLink]="['/layout']">
+      <button mat-button class="menu-button">
+        <mat-icon>home</mat-icon>
+        <span>home</span>
+      </button>
+    </a>
+
+    <a style="color: white; text-decoration: none" [routerLink]="['/profile']">
+      <button mat-button class="menu-button">
+        <mat-icon>person</mat-icon>
+        <span>Profile</span>
+      </button>
+    </a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="display: flex">
+      <mat-card
+        style="height: 31rem; width: 30rem"
+        class="card mat-elevation-z8"
+      >
+        <mat-card-title
+          style="
+            text-align: center;
+            font-weight: bold;
+            color: rgb(245, 209, 9);
+            font-family: Roboto Mono;
+            margin-bottom: 1rem;
+          "
+          >Intro</mat-card-title
+        >
+
+        <h3
+          style="
+            font-size: 20px;
+            color: rgb(245, 209, 9);
+            font-family: Roboto Mono;
+          "
+        >
+          Since I was a child, I have been passionate about technology and
+          business. At age 12 I discovered the universe of software development
+          and now, more experienced, I entered the university in my dream area.
+          System analysis and development course at Unip and I am an accounting
+          technician. I'm an ambitious, outgoing and self-taught person, I've
+          been through some bootcamps and I'm finishing others. You can see my
+          development at my github profile. I'm good at English and am currently
+          studying German.
+        </h3>
+      </mat-card>
+    </div>
+    <mat-card
+      id="top-languages"
+      name="top-languages"
+      style="
+        margin-left: 35rem;
+        position: absolute;
+        top: 2px;
+        color: rgb(245, 209, 9);
+        font-family: Roboto Mono;
+      "
+      class="github mat-elevation-z8"
+    >
+      <h1>
+        <img
+          height="180em"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=samucatezu&layout=compact&langs_count=7&theme=tokyonight"
+        />
+
+        <img
+          height="180em"
+          src="https://github-readme-stats.vercel.app/api?username=samucatezu&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"
+        />
+      </h1>
+    </mat-card>
+    <mat-card
+      class="mat-elevation-z8"
+      style="
+        width: 650px;
+        height: 70px;
+        margin-left: 35rem;
+        position: absolute;
+        top: 14rem;
+      "
+    >
+      <mat-card-title
+        style="
+          margin-bottom: 1rem;
+          text-align: center;
+          color: rgb(245, 209, 9);
+          font-family: Roboto Mono;
+          margin-bottom: 1rem;
+        "
+        >Languages/tools/frameworks i've knowleadge</mat-card-title
+      >
+      <div style="display: flex">
+        <p align="left">
+          <a href="https://angular.io" target="_blank">
+            <img
+              src="https://angular.io/assets/images/logos/angular/angular.svg"
+              alt="angular"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://www.nodejs.com" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="postgresql"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://nestjs.com/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg"
+              alt="postgresql"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://www.typescriptlang.org/" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"
+              alt="aws"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://www.w3schools.com/css/" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+              alt="css3"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://www.w3.org/html/" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              alt="html5"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://www.photoshop.com/en" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
+              alt="photoshop"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://www.mysql.com/" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+              alt="mysql"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://www.postgresql.org" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+              alt="postgresql"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://spring.io/" target="_blank">
+            <img
+              src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
+              alt="spring"
+              width="40"
+              height="40"
+            />
+          </a>
+        </p>
+        <a href="https://www.java.com" target="_blank">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+            alt="java"
+            width="40"
+            height="40"
+          />
+        </a>
+        <a href="https://bitbucket.org/" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"
+            alt="kotlin"
+            width="40"
+            height="40"
+          />
+        </a>
+        <a href="https://git-scm.com/" target="_blank">
+          <img
+            src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+            alt="git"
+            width="40"
+            height="40"
+          />
+        </a>
+        <a href="https://www.github.com" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            alt="postgresql"
+            width="40"
+            height="40"
+          />
+        </a>
+        <a href="https://postman.com" target="_blank">
+          <img
+            src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+            alt="postman"
+            width="40"
+            height="40"
+          />
+        </a>
+        <a href="https://www.python.org" target="_blank">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            alt="python"
+            width="40"
+            height="40"
+          />
+        </a>
+      </div>
+    </mat-card>
+    <mat-card
+      class="mat-elevation-z8"
+      style="
+        width: 450px;
+        height: 110px;
+        margin-left: 35rem;
+        position: absolute;
+        top: 21rem;
+        color: rgb(245, 209, 9);
+        font-family: Roboto Mono;
+      "
+    >
+      <mat-card-title>My professional social networks</mat-card-title>
+      <div style="display: flex; margin-left: 8rem">
+        <a
+          style="display: flex"
+          href="https://www.linkedin.com/in/samuel-almeida-ads/"
+          target="_blank"
+        >
+          <img src="https://img.icons8.com/glyph-neue/64/ffffff/linkedin.png" />
+        </a>
+
+        <a href="https://github.com/samucatezu" target="_blank">
+          <img src="https://img.icons8.com/ios-glyphs/64/ffffff/github.png" />
+        </a>
+        <a
+          href="https://profile.codersrank.io/user/samucatezu/"
+          target="_blank"
+        >
+          <img
+            src="https://img.icons8.com/ios-glyphs/64/ffffff/developer.png"
+          />
+        </a>
+      </div>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>

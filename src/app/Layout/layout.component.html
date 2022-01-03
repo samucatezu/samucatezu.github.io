@@ -54,25 +54,19 @@
 
     <mat-divider></mat-divider>
 
-    <button mat-button class="menu-button">
-      <mat-icon>home</mat-icon>
-      <span>Home</span>
-    </button>
-    <button mat-button class="menu-button">
-      <mat-icon>person</mat-icon>
-      <span>Profile</span>
-    </button>
-    <button mat-button class="menu-button">
-      <mat-icon>info</mat-icon>
-      <span>About</span>
-    </button>
+    <a style="color: white; text-decoration: none" [routerLink]="['/layout']">
+      <button mat-button class="menu-button">
+        <mat-icon>home</mat-icon>
+        <span>home</span>
+      </button>
+    </a>
 
-    <mat-divider></mat-divider>
-
-    <button mat-button class="menu-button">
-      <mat-icon>help</mat-icon>
-      <span>Help</span>
-    </button>
+    <a style="color: white; text-decoration: none" [routerLink]="['/profile']">
+      <button mat-button class="menu-button">
+        <mat-icon>person</mat-icon>
+        <span>Profile</span>
+      </button>
+    </a>
   </mat-sidenav>
   <mat-sidenav-content>
     <div name="line-card-one" id="line-card-one" class="line-card-one">
@@ -138,10 +132,11 @@
         <mat-card-subtitle>Project for studies</mat-card-subtitle>
         <mat-card-title
           >MovieCatalog &nbsp;
-          <img src="https://img.icons8.com/ios-filled/30/000000/angularjs.png" />
+          <img
+            src="https://img.icons8.com/ios-filled/30/000000/angularjs.png"
+          />
           <img src="https://img.icons8.com/ios-filled/30/000000/html.png" />
           <img src="https://img.icons8.com/ios-filled/30/000000/css.png" />
-          
         </mat-card-title>
         <mat-card-content>
           <p>
@@ -166,16 +161,16 @@
     </div>
 
     <div name="line-card-one" id="line-card-one" class="line-card-one">
-      
-
       <mat-card class="card2">
         <mat-card-subtitle>Project for studies</mat-card-subtitle>
         <mat-card-title
           >ProductCatalog &nbsp;
-          <img src="https://img.icons8.com/ios/30/000000/java-coffee-cup-logo.png"/>
-          <img src="https://img.icons8.com/color/30/000000/elasticsearch.png"/>
-          <img src="https://img.icons8.com/ios-filled/30/000000/docker.png"/>
-            </mat-card-title>
+          <img
+            src="https://img.icons8.com/ios/30/000000/java-coffee-cup-logo.png"
+          />
+          <img src="https://img.icons8.com/color/30/000000/elasticsearch.png" />
+          <img src="https://img.icons8.com/ios-filled/30/000000/docker.png" />
+        </mat-card-title>
         <mat-card-content>
           <p>Program that consume ViaCep APi for study and work purpose</p>
         </mat-card-content>
@@ -233,8 +228,9 @@
         <mat-card-title
           >OlympicSys &nbsp;
           <img
-            src="https://img.icons8.com/ios-filled/30/000000/circled-c.png" />
-            </mat-card-title>
+            src="https://img.icons8.com/ios-filled/30/000000/circled-c.png"
+          />
+        </mat-card-title>
         <mat-card-content>
           <p>Olympics management project created in C language</p>
         </mat-card-content>
@@ -255,16 +251,15 @@
     </div>
 
     <div name="line-card-one" id="line-card-one" class="line-card-one">
-      
-
       <mat-card class="card2">
         <mat-card-subtitle>Project for studies</mat-card-subtitle>
         <mat-card-title
           >JavaCrud &nbsp;
-          <img src="https://img.icons8.com/ios/30/000000/java-coffee-cup-logo.png"/>
-          <img src="https://img.icons8.com/ios-filled/30/000000/sql.png"/>
-          
-            </mat-card-title>
+          <img
+            src="https://img.icons8.com/ios/30/000000/java-coffee-cup-logo.png"
+          />
+          <img src="https://img.icons8.com/ios-filled/30/000000/sql.png" />
+        </mat-card-title>
         <mat-card-content>
           <p>Simple CRUD program using Java and JavaServerPage</p>
         </mat-card-content>
@@ -286,14 +281,9 @@
 
       <mat-card class="card3">
         <mat-card-subtitle>empty</mat-card-subtitle>
-        <mat-card-title
-          >empty &nbsp;
-          
-        </mat-card-title>
+        <mat-card-title>empty &nbsp; </mat-card-title>
         <mat-card-content>
-          <p>
-            empty
-          </p>
+          <p>empty</p>
         </mat-card-content>
         <mat-divider inset></mat-divider>
         <mat-card-actions>
@@ -313,11 +303,7 @@
       <mat-card class="card1">
         <mat-card-subtitle>empty</mat-card-subtitle>
 
-        <mat-card-title
-          >empty &nbsp;
-          
-            
-            </mat-card-title>
+        <mat-card-title>empty &nbsp; </mat-card-title>
         <mat-card-content>
           <p>Oempty</p>
         </mat-card-content>
