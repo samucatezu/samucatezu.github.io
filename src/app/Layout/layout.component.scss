@@ -13,14 +13,9 @@ mat-sidenav {
   text-align: center;
   font-family: Roboto Mono;
 }
-.content {
-  font-size: 2rem;
-  color: lightgray;
 
-  border-radius: 10px;
-}
 mat-sidenav-container {
-  height: calc(100vh - 65px);
+  height: 94%;
 }
 
 .menu-button {
@@ -43,12 +38,14 @@ mat-sidenav-container {
 }
 
 mat-card {
-  margin: 2rem;
-  width: 400px;
-  gap: 2rem;
+  margin: 2%;
+  width: 60%;
+
   font-family: Roboto Mono;
 }
 
 .line-card-one {
   display: flex;
 }
+
+// Responsive codes
