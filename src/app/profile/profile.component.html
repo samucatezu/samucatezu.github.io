@@ -15,7 +15,7 @@
     <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
   </button>
 
-  <span>Introduction</span>
+  <span>introduction</span>
   <span class="example-spacer"></span>
 
   <button mat-icon-button>
@@ -59,7 +59,7 @@
     <h2 class="name">Samuel Almeida</h2>
     <p class="designation">Software Engineer</p>
 
-    <mat-divider style="color: white"></mat-divider>
+    <mat-divider></mat-divider>
 
     <a style="color: white; text-decoration: none" [routerLink]="['/layout']">
       <button mat-button class="menu-button">
@@ -78,7 +78,7 @@
   <mat-sidenav-content>
     <div style="display: flex">
       <mat-card
-        style="height: 31rem; width: 30rem"
+        style="height: 27rem; width: 30rem"
         class="card mat-elevation-z8"
       >
         <mat-card-title
@@ -144,7 +144,14 @@
         top: 14rem;
       "
     >
-      <mat-card-title style="color: rgb(245, 209, 9)"
+      <mat-card-title
+        style="
+          margin-bottom: 1rem;
+          text-align: center;
+          color: rgb(245, 209, 9);
+          font-family: Roboto Mono;
+          margin-bottom: 1rem;
+        "
         >Languages/tools/frameworks i've knowleadge</mat-card-title
       >
       <div style="display: flex">
@@ -314,6 +321,45 @@
           />
         </a>
       </div>
+    </mat-card>
+
+    <mat-card id="about" name="about" class="about">
+      <mat-card-title
+        style="
+          color: rgb(245, 209, 9);
+          font-family: Roboto Mono;
+          text-align: center;
+        "
+      >
+        About
+      </mat-card-title>
+      <mat-card-content style="font-size: 20px">
+        This project was built to be the base of all my projects, features and
+        studies. If yhou want to use this base, just give me some credits. Be
+        free to make a fork of this project too, you're welcome!
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card
+      style="color: rgb(245, 209, 9); font-family: Roboto Mono"
+      id="help"
+      name="help"
+      class="help"
+    >
+      <mat-card-title
+        style="
+          color: rgb(245, 209, 9);
+          font-family: Roboto Mono;
+          text-align: center;
+        "
+      >
+        Help
+      </mat-card-title>
+      <mat-card-content style="font-size: 20px">
+        Did you have some question? Dont't worry, contact me on LinkedIn or on
+        my e-mail address! Ps: If you want to contribute or be inspired by this
+        project, feel free to do it.
+      </mat-card-content>
     </mat-card>
   </mat-sidenav-content>
 </mat-sidenav-container>
