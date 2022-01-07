@@ -20,7 +20,7 @@ Have a personal portfolio to show to the comunnity
  - :ok: add cards with informations about the project
  - :ok: add an page about myself with contact
  - :ok: post the project using github paghes
- - Insert Help and About cards inside Home Page
+ - :ok: Insert Help and About cards inside Home Page
  - Make the project mobile first
 
 
