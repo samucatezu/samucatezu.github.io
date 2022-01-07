@@ -22,6 +22,7 @@ Have a personal portfolio to show to the comunnity
  - :ok: post the project using github paghes
  - :ok: Insert Help and About cards inside Home Page
  - Make the project mobile first
+ - Make a portuguese version
 
 
 
